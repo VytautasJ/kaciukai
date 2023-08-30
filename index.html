@@ -14,6 +14,8 @@
     <input type="text" id="usernameInput" placeholder="Enter your username">
     <button type="submit">Save</button>
     </form>
+      <span id="saveMessage" style="color: green; display: none;">Saved!</span>
+
 <script>
 document.getElementById('usernameForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the form from submitting in the traditional way
@@ -22,6 +24,8 @@ document.getElementById('usernameForm').addEventListener('submit', function(even
     
     // Save the username to localStorage
     localStorage.setItem('username', username);
+    // Display the "Saved!" message
+    document.getElementById('saveMessage').style.display = 'inline';
     
 });
 
