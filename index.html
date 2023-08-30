@@ -12,7 +12,6 @@
 <form id="usernameForm">
     <input type="text" id="usernameInput" placeholder="Enter your username">
     <button type="submit">Save</button>
-</form>
 document.getElementById('usernameForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the form from submitting in the traditional way
 
@@ -28,7 +27,7 @@ if (savedUsername) {
     console.log(`Welcome back, ${savedUsername}!`);
     // You can also use this username to update your page's content accordingly
 }
-
+</form>
       
 </body>
 </html>
